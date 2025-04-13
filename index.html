@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jokes</title>
+    <title>Who says that? GOT edition</title>
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
@@ -11,5 +11,25 @@
     <script defer src="script.mjs"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Who says that??</h1>
+    <h2>Here's a quote from Game of Thrones. Guess who said it.</h2>
+    <h3 id="quoteContainer"></h3>
+    <form >
+      <ul id="characterList"></ul>
+    </form>
+    <template id="characterTemplate" class="storyStyle">
+      <div id="templateDiv">
+        <img id="templateImage">
+        <p id="templateName"></p>
+      </div>
+    </template>
+    <footer>
+      <p id="copyRight">
+        &copy; 2025 by
+        <a href="https://www.linkedin.com/in/geiselle-holt/">Geiselle Holt</a>
+      </p>
+    </footer>
+  </body>
+
 </html>

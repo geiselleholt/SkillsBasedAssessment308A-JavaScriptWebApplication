@@ -12,3 +12,11 @@ export async function getCharactersImages() {
   });
   return allCharactersImages;
 }
+
+export function getImageSelections() {
+  for (i = 0; i < 5; i++) {
+    const randomIndex = Math.floor(Math.random() * allCharactersImages.length);
+    characterSelectionImages.push(allCharactersImages[randomIndex])
+  }
+  console.log(characterSelectionImages);
+}

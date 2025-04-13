@@ -1,3 +1,15 @@
 body {
     background-color: aquamarine;
 }
+
+#templateImage {
+    height: 100px;
+    width: 200px;
+    
+}
+
+#characterList {
+display: flex;
+justify-content: space-around;
+list-style-type: none;
+}
