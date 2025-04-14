@@ -69,14 +69,13 @@ let characterSelections = [];
   let quote = response.data.sentence;
   let person = response.data.character.name;
   let quoteContainer = document.getElementById("quoteContainer");
-  quoteContainer.textContent = quote;
+  quoteContainer.textContent = `"${quote}"`;
   let charImg = await getCharactersImages();
   charImg.forEach((char) => {
     if (char.name === person) {
       characterSelections.push(char);
     }
   });
-  getCharSelections();
   displayCharacters();
 })();
 
@@ -92,6 +91,7 @@ function getCharSelections() {
 }
 
 function displayCharacters() {
+  getCharSelections();
   const randomIndexes = [];
   while (randomIndexes.length < characterSelections.length) {
     const index = Math.floor(Math.random() * characterSelections.length);
@@ -103,6 +103,7 @@ function displayCharacters() {
     let char = characterSelections[index]
     createCharacter(char.image, char.name);
   });
+  
 }
 
 function createCharacter(image, name) {
@@ -113,7 +114,7 @@ function createCharacter(image, name) {
   let clone = template.content.cloneNode(true);
 
   clone.getElementById(`templateImage`).src = image;
-  clone.getElementById(`templateName`).innerHTML = `<h3>${name}</h3>`;
+  clone.getElementById(`templateName`).innerHTML = `<h2>${name}</h2>`;
 
   fragment.appendChild(clone);
 

@@ -1,15 +1,81 @@
 body {
-    background-color: aquamarine;
+  background-image: url("images/got2.png");
+  /* background-size: cover; */
+  /* background-repeat: no-repeat; */
 }
 
 #templateImage {
-    height: 100px;
-    width: 200px;
-    
+  height: 150px;
+  width: 200px;
+  border: 10px solid crimson;
+  box-shadow: 10px 10px 10px goldenrod;
+}
+
+#templateImage:hover {
+    transform: scale(1.25)
 }
 
 #characterList {
-display: flex;
-justify-content: space-around;
-list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  background-color: white;
+  padding: 20px 20px 0px 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px goldenrod;
+}
+
+#title {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: bolder;
+  background-color: goldenrod;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px crimson;
+}
+
+#instructions {
+  color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bolder;
+  background-color: goldenrod;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px crimson;
+}
+
+#quoteContainer {
+  color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  background-color: crimson;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px goldenrod;
+}
+
+h2 {
+    color: goldenrod;
+}
+
+#templateName {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+footer {
+    background-color: goldenrod;
+    color: crimson;
 }
