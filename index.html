@@ -12,15 +12,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <p id="title">Who says that??</p>
-    <p id="instructions">Here's a quote from Game of Thrones. Guess who said it.</p>
+    <header id="header">
+      <img src="./images/got.png" alt="got logo" height="100px">
+      <p id="title">Who says that??</p>
+      <img src="./images/got2.png" alt="got logo" height="100px" width="150px">
+    </header>
+    <p id="instructions">
+      Here's a quote from Game of Thrones. Guess who said it.
+    </p>
     <p id="quoteContainer"></p>
-    <form >
+    <form>
       <ul id="characterList"></ul>
     </form>
     <template id="characterTemplate" class="storyStyle">
       <div id="templateDiv">
-        <img id="templateImage">
+        <img id="templateImage" />
         <p id="templateName"></p>
       </div>
     </template>
@@ -31,5 +37,4 @@
       </p>
     </footer>
   </body>
-
 </html>
