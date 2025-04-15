@@ -26,7 +26,7 @@ characterSection.addEventListener(`click`, handleCharacterSection);
 
 function handleCharacterSection(e) {
   e.preventDefault();
-
+  console.log(e.target.src)
   let selectedImage = "";
   if (e.target.tagName === "UL") {
     return;
@@ -34,6 +34,7 @@ function handleCharacterSection(e) {
     allCharactersImages.forEach((char) => {
       if (char.name === selectedChar) {
         selectedImage = char.image;
+        console.log(selectedImage);
       }
     });
   }
