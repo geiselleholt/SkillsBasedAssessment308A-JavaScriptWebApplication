@@ -24,6 +24,10 @@ let selectedChar = "";
 
 characterSection.addEventListener(`click`, handleCharacterSection);
 
+// let counter = 0;
+// let counterContainer = document.getElementById("counter");
+// counterContainer.textContent = counter;
+
 function handleCharacterSection(e) {
   e.preventDefault();
   console.log(e.target.src);
@@ -44,9 +48,12 @@ function handleCharacterSection(e) {
     e.target.src ===
       `https://geiselleholt.github.io/SkillsBasedAssessment308A-JavaScriptWebApplication/${selectedImage}`
   ) {
+    // counter += 1;
+    // console.log(counter);
     alert("Correct 😀 \nPlay again!");
     setTimeout(window.location.reload(), 2000);
   } else {
+    // counter = 0;
     alert("Nope 😵 Try Again");
   }
 }

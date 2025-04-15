@@ -24,13 +24,13 @@ body {
   padding: 20px 20px 0px 20px;
   border-radius: 20px;
   box-shadow: 5px 5px 5px crimson;
-  /* width: 100%; */
 }
 
 #header {
   color: crimson;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   align-items: center;
   font-size: 3.5rem;
   font-weight: bolder;
@@ -52,7 +52,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   background-color: goldenrod;
   padding: 5px;
@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bolder;
   background-color: crimson;
   padding: 5px 20px 5px 20px;
@@ -84,7 +84,7 @@ h2 {
   justify-content: center;
   align-items: center;
   margin: 0px;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 footer {
