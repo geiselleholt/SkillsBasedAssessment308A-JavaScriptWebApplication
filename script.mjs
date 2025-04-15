@@ -26,7 +26,7 @@ characterSection.addEventListener(`click`, handleCharacterSection);
 
 function handleCharacterSection(e) {
   e.preventDefault();
-  console.log(e.target.src)
+  console.log(e.target.src);
   let selectedImage = "";
   if (e.target.tagName === "UL") {
     return;
@@ -40,7 +40,9 @@ function handleCharacterSection(e) {
   }
   if (
     e.target.src === selectedImage ||
-    e.target.src === `http://127.0.0.1:5500/${selectedImage}`
+    e.target.src === `http://127.0.0.1:5500/${selectedImage}` ||
+    e.target.src ===
+      `https://geiselleholt.github.io/SkillsBasedAssessment308A-JavaScriptWebApplication/${selectedImage}`
   ) {
     alert("Correct 😀 \nPlay again!");
     setTimeout(window.location.reload(), 2000);
