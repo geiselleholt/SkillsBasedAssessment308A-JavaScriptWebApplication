@@ -27,12 +27,12 @@ body {
 }
 
 #header {
-  color: crimson;
+  /* color: crimson; */
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   font-weight: bolder;
   background-color: goldenrod;
   padding: 0px;
@@ -45,6 +45,11 @@ body {
 #title {
   margin: 5px;
   padding: 20px;
+  font-size: 3.5em;
+  font-weight: bold;
+  background: radial-gradient(crimson, black, crimson);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #instructions {
@@ -63,7 +68,6 @@ body {
 }
 
 #quoteSection {
-  color: goldenrod;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,3 +95,15 @@ footer {
   background-color: goldenrod;
   color: crimson;
 }
+
+
+
+/* #counterDiv {
+  background-color: black;
+  font-size: 2rem;
+  padding: 10px;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+} */

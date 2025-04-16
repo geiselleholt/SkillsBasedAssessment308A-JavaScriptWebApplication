@@ -25,12 +25,16 @@ let selectedChar = "";
 characterSection.addEventListener(`click`, handleCharacterSection);
 
 // let counter = 0;
+
 // let counterContainer = document.getElementById("counter");
 // counterContainer.textContent = counter;
 
+// function updateCounter() {
+//   counterContainer.textContent = counter;
+// }
+
 function handleCharacterSection(e) {
   e.preventDefault();
-  console.log(e.target.src);
   let selectedImage = "";
   if (e.target.tagName === "UL") {
     return;
@@ -38,7 +42,6 @@ function handleCharacterSection(e) {
     allCharactersImages.forEach((char) => {
       if (char.name === selectedChar) {
         selectedImage = char.image;
-        console.log(selectedImage);
       }
     });
   }
@@ -49,8 +52,8 @@ function handleCharacterSection(e) {
       `https://geiselleholt.github.io/SkillsBasedAssessment308A-JavaScriptWebApplication/${selectedImage}`
   ) {
     // counter += 1;
-    // console.log(counter);
     alert("Correct 😀 \nPlay again!");
+    // updateCounter()
     setTimeout(window.location.reload(), 2000);
   } else {
     // counter = 0;
